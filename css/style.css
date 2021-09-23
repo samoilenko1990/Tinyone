@@ -189,3 +189,17 @@ p.description{
 	margin: 0 auto;
 	text-align: center;
 }
+
+ul.services__desc{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+ul.services__desc li{
+	list-style-type: none;
+}
+
+ul.services__desc li img{
+	width: 43px;
+	height: 42px;
+}
