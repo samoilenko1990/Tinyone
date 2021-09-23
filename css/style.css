@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+
+
+body{
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+header{
+	background: #fcdb00;
+	height: 100vh;
+}
+
+.header-top{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding-top: 60px;
+	
+}
+
+.header-top__menu{
+	position: relative;
+}
+
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__list {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__list {
+  visibility: visible;
+  left: 0;
+}
+
+.header-top__logo{
+	text-align: center;
+	display: grid;
+    grid-template-columns: 45px 103px;
+    align-self: center;
+    justify-self: center;
+}
+.header-top__logo span{
+	font-size: 30px;
+	font-weight: normal;
+}
+.header-top__logo img{
+	width: 44px;
+	height: 43px;
+}
+
+
+.header-top__social ul{
+	display: grid;
+	grid-template-columns: repeat(3, 25px);
+	grid-gap: 15px;
+	justify-content: end;
+}
+.header-top__social ul li{
+	list-style-type: none;
+}
+
+.header-top__social img{
+	width: 20px;
+	height: 20px;
+}
+
+.header__info{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 18vh;
+	/*margin-bottom: 180px;*/
+
+}
+
+.header__info h1{
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-bottom: 25px;
+
+}
+
+.header__info p{
+  font-size: 20px;
+  line-height: 23px;
+  padding-bottom: 40px;
+}
+
+.header__info a{
+	color: #000;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 15px 70px;
+	text-decoration: none;
+	border: 3px solid #000;
+}
+
+.header__info a:hover{
+	animation:flip;
+}
+
+.header__arrow{
+	text-align: center;
+	display: block;
+    margin-top: 17vh;
+    
+}
+
+.services{
+
+}
+
+h2.title{
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+p.description{
+	width: 65%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
