@@ -181,6 +181,7 @@ h2.title{
 	font-size: 32px;
 	font-weight: bold;
 	padding-top: 30px;
+	margin: 0;
 }
 
 p.description{
@@ -193,28 +194,43 @@ p.description{
 ul.services__desc{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	margin-top: 90px;
+	grid-column-gap: 50px;
+	grid-row-gap: 80px;
 }
 
 ul.services__desc li{
 	list-style-type: none;
 	display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 5px;
-grid-row-gap: 10px;
+grid-template-columns: 35px;
+grid-template-rows: 34px;
+grid-column-gap: 35px;
+grid-row-gap: 15px;
+
 }
 
 ul.services__desc li img{
-	width: 43px;
-	height: 42px;
+	width: 35px;
+	height:34px;
 	grid-area: 1 / 1 / 3 / 2;
+
 }
 
 ul.services__desc li h3{
 	 grid-area: 1 / 2 / 2 / 3;
+	 margin: 0;
+	 padding-top: 5px;
 }
 
 ul.services__desc li p.text_desc{
 	 grid-area: 2 / 2 / 3 / 3;
-	 
+	 margin: 0;
+	 padding: 0;
+
+}
+
+
+.services h2.title{
+	padding-top: 150px;
+	padding-bottom: 20px;
 }
