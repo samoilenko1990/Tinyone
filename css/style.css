@@ -160,7 +160,7 @@ header p{
   padding-bottom: 40px;
 }
 
-.header__info a{
+.header__info a.butt{
 	color: #000;
 	font-weight: bold;
 	font-size: 22px;
@@ -170,7 +170,9 @@ header p{
 }
 
 .header__info a:hover{
-	animation:flip;
+	animation: bounce;
+	animation-duration: 1s;
+	display: block;
 }
 
 .header__arrow{
@@ -180,9 +182,7 @@ header p{
     
 }
 
-.services{
 
-}
 
 h2.title{
 	text-align: center;
