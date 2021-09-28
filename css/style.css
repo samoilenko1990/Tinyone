@@ -86,8 +86,8 @@ header p{
   padding: 80px 0;
   list-style: none;
   text-align: center;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  background-color: #fff;
+  /*box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);*/
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -352,4 +352,11 @@ footer{
 
 .form button:hover{
 	  color: #fcdb00;
+}
+
+
+.menu__list {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: 22px;
+	font-weight: bold;
 }
